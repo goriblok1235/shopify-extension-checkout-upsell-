@@ -14,23 +14,23 @@ Live Store:
 Password: thawgh
 ## Key Features
 
-Dynamic product bundle configuration
+- Dynamic product bundle configuration
 
-Conditional upsell logic based on cart contents
+- Conditional upsell logic based on cart contents
 
-Discounted bundled pricing support
+- Discounted bundled pricing support
 
-Seamless add-to-cart functionality
+- Seamless add-to-cart functionality
 
-Responsive UI compatible with Shopify themes
+- Responsive UI compatible with Shopify themes
 
-Optimized for performance and user experience
+- Optimized for performance and user experience
 
 🛠 Tech Stack
 
-Typescript
+- Typescript
 
-CSS / Checkout Customization
+- CSS / Checkout Customization
 
 This implementation focuses on improving conversion rates while maintaining a smooth and intuitive checkout experience.
 
