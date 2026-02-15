@@ -7,9 +7,12 @@ Shopify apps are built on a variety of Shopify tools to create a great merchant 
 
 This app template does little more than install the CLI and scaffold a repository.
 
-.
+## Live Demo
+Live Store:
+[https://pradhan-leathers.myshopify.com/](https://pradhan-leathers.myshopify.com/?_ab=0&_bt=eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaU53Y21Ga2FHRnVMV3hsWVhSb1pYSnpMbTE1YzJodmNHbG1lUzVqYjIwR09nWkZWQT09IiwiZXhwIjoiMjAyNi0wMi0xNVQxNzo1OToyMy41NjNaIiwicHVyIjoicGVybWFuZW50X3Bhc3N3b3JkX2J5cGFzcyJ9fQ%3D%3D--d8c0f90eebc34b54ad7cd99fe93327dbdfb07939&_fd=0&_sc=1&key=5d59b7f235aaf6c8a42c9438d851080b3cdfd58f4f7e07d6fe87dd3ab898ebd4&preview_theme_id=157069836537)
 
-🚀 Key Features
+Password: thawgh
+## Key Features
 
 Dynamic product bundle configuration
 
@@ -25,13 +28,9 @@ Optimized for performance and user experience
 
 🛠 Tech Stack
 
-Shopify (Liquid)
+Typescript
 
-JavaScript
-
-Shopify AJAX API
-
-CSS / Theme Customization
+CSS / Checkout Customization
 
 This implementation focuses on improving conversion rates while maintaining a smooth and intuitive checkout experience.
 
@@ -92,6 +91,17 @@ pnpm run dev
 ```
 
 Open the URL generated in your console. Once you grant permission to the app, you can start development (such as generating extensions).
+
+### Project Structure
+
+README.md – This file.
+- extensions/checkout-upsell/ – Main folder for the checkout UI extension code.
+- src/Checkout.tsx – The extension's main source code for additional checkout UI.
+- shopify.extension.toml – Configuration for the extension’s integration with Shopify checkout.
+- locales/ – Localization files.
+- .vscode/, .gitignore, .graphqlrc.js, .npmrc, etc. – Project configuration and settings.
+- package.json, package-lock.json – Dependencies and package management.
+- shopify.app.toml – App configuration for Shopify integration.
 
 ## Developer resources
 
