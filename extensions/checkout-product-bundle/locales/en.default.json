@@ -1,0 +1,9 @@
+{
+  "sectionHeading": "Add to your order",
+  "loading": "Loading products…",
+  "loadingProduct": "Loading…",
+  "noProductsConfigured": "No upsell products selected. Choose product variants in the extension settings.",
+  "cartCannotBeModified": "The cart cannot be modified at this step of checkout.",
+  "couldNotLoadProduct": "Could not load product details.",
+  "failedToLoadProduct": "Failed to load product."
+}

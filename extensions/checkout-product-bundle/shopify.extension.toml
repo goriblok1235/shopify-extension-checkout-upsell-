@@ -1,0 +1,83 @@
+# Learn more about configuring your checkout UI extension:
+# https://shopify.dev/docs/api/checkout-ui-extensions/latest/configuration
+
+# The version of APIs your extension will receive. Learn more:
+# https://shopify.dev/docs/api/usage/versioning
+api_version = "2026-01"
+
+[[extensions]]
+name = "checkout-product-bundle"
+handle = "checkout-product-bundle"
+type = "ui_extension"
+uid = "a77bf07d-9a46-d0c4-6996-24dc1f536b051c385214"
+
+# Controls where in Shopify your extension will be injected,
+# and the file that contains your extension’s source code. Learn more:
+# https://shopify.dev/docs/api/checkout-ui-extensions/latest/extension-targets-overview
+
+[[extensions.targeting]]
+module = "./src/Checkout.tsx"
+target = "purchase.checkout.block.render"
+
+[extensions.capabilities]
+# Gives your extension access to directly query Shopify’s storefront API.
+# https://shopify.dev/docs/api/checkout-ui-extensions/latest/configuration#api-access
+api_access = true
+
+# Gives your extension access to make external network calls, using the
+# JavaScript `fetch()` API. Learn more:
+# https://shopify.dev/docs/api/checkout-ui-extensions/latest/configuration#network-access
+# network_access = true
+
+# Loads metafields on checkout resources, including the cart,
+# products, customers, and more. Learn more:
+# https://shopify.dev/docs/api/checkout-ui-extensions/latest/configuration#metafields
+
+# [[extensions.metafields]]
+# namespace = "my_namespace"
+# key = "my_key"
+# [[extensions.metafields]]
+# namespace = "my_namespace"
+# key = "my_other_key"
+
+# Defines settings that will be collected from merchants installing
+# your extension. Learn more:
+# https://shopify.dev/docs/api/checkout-ui-extensions/latest/configuration#settings-definition
+
+[extensions.settings]
+
+[[extensions.settings.fields]]
+key = "upsell_heading"
+type = "single_line_text_field"
+name = "Section Heading"
+description = "Heading text for the upsell section"
+default = "Add to your order"
+
+[[extensions.settings.fields]]
+key = "number_of_products"
+type = "number_integer"
+name = "Number of products to display"
+description = "How many upsell products to show (1-3)"
+validations = [
+{ name = "min", value = "1" },
+{ name = "max", value = "3" }
+]
+default = "3"
+
+[[extensions.settings.fields]]
+key = "upsell_product_1"
+type = "variant_reference"
+name = "Upsell product 1"
+description = "Select the first product variant to display in checkout"
+
+[[extensions.settings.fields]]
+key = "upsell_product_2"
+type = "variant_reference"
+name = "Upsell product 2"
+description = "Select the second product variant to display in checkout (optional)"
+
+[[extensions.settings.fields]]
+key = "upsell_product_3"
+type = "variant_reference"
+name = "Upsell product 3"
+description = "Select the third product variant to display in checkout (optional)"

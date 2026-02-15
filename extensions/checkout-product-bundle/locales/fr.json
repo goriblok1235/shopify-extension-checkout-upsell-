@@ -1,0 +1,9 @@
+{
+  "sectionHeading": "Ajoutez à votre commande",
+  "loading": "Chargement des produits…",
+  "loadingProduct": "Chargement…",
+  "noProductsConfigured": "Aucun produit de vente incitative sélectionné. Choisissez les variantes de produit dans les paramètres de l'extension.",
+  "cartCannotBeModified": "Le panier ne peut pas être modifié à cette étape du paiement.",
+  "couldNotLoadProduct": "Impossible de charger les détails du produit.",
+  "failedToLoadProduct": "Échec du chargement du produit."
+}
