@@ -1,16 +1,39 @@
-# Shopify App Template - Extension only
+# Checkout Upsell Product Bundle – Shopify
 
-This is a template for building an [extension-only Shopify app](https://shopify.dev/docs/apps/build/app-extensions/build-extension-only-app). It contains the basics for building a Shopify app that uses only app extensions.
-
-This template doesn't include a server or the ability to embed a page in the Shopify Admin. If you want either of these capabilities, choose the [Remix app template](https://github.com/Shopify/shopify-app-template-remix) instead.
-
-Whether you choose to use this template or another one, you can use your preferred package manager and the Shopify CLI with [these steps](#installing-the-template).
-
-## Benefits
+This project implements a dynamic Checkout Upsell Product Bundle feature in Shopify, designed to increase Average Order Value (AOV) by offering complementary or discounted products during the checkout process.
+The solution allows merchants to configure bundled products that can be displayed as upsell suggestions based on cart items. Customers can seamlessly add the suggested products to their cart with a single click before completing checkout.
 
 Shopify apps are built on a variety of Shopify tools to create a great merchant experience. The [create an app](https://shopify.dev/docs/apps/getting-started/create) tutorial in our developer documentation will guide you through creating a Shopify app.
 
 This app template does little more than install the CLI and scaffold a repository.
+
+.
+
+🚀 Key Features
+
+Dynamic product bundle configuration
+
+Conditional upsell logic based on cart contents
+
+Discounted bundled pricing support
+
+Seamless add-to-cart functionality
+
+Responsive UI compatible with Shopify themes
+
+Optimized for performance and user experience
+
+🛠 Tech Stack
+
+Shopify (Liquid)
+
+JavaScript
+
+Shopify AJAX API
+
+CSS / Theme Customization
+
+This implementation focuses on improving conversion rates while maintaining a smooth and intuitive checkout experience.
 
 ## Getting started
 
